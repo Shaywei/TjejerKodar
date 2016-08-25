@@ -18,9 +18,7 @@ In addition to being able to run Python, we are going to install a good text edi
 
 If you would like to use a different text editor from the recommendation for your operating system, please let a staff member know.
 
-* [Windows](./Windows_text_editor.md)
-* [Mac](./OSX_text_editor.md)
-* [Linux](./Linux_text_editor.md)
+* [Sublime Text (available for Windows/Mac/Linux)](./Text_editor.md)
 
 ## Goal #3: Practice starting and exiting Python
 
