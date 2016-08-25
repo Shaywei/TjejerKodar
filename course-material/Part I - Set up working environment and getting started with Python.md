@@ -82,7 +82,7 @@ Later, we'll have an interactive lecture to cover more Python basics.
 
 [Self-directed Tutorial](./standalone-tutorials/Self_Directed_Tutorial.md)
 
-## Homework / Bonus material: Practice Python using CodingBat
+## Homework / Bonus exercise: Practice Python using CodingBat
 
 Learning about functions opened up a whole new way for us to practice, using the programming site `codingbat.com`.  
 
