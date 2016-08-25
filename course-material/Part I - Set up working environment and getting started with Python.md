@@ -8,9 +8,9 @@ The reason for the copying and not using original source is to avoid the risk of
 
 This section has instructions for installing Python and running Python from a command prompt.
 
-* [Windows](./Windows_set_up_Python.md)
-* [Mac](./OSX_set_up_Python.md)
-* [Linux](./Linux_set_up_Python.md)
+* [Windows](./standalone-tutorials/Windows_set_up_Python.md)
+* [Mac](./standalone-tutorials/OSX_set_up_Python.md)
+* [Linux](./standalone-tutorials/Linux_set_up_Python.md)
 
 ## Goal #2: Prepare a text editor
 
@@ -18,15 +18,15 @@ In addition to being able to run Python, we are going to install a good text edi
 
 If you would like to use a different text editor from the recommendation for your operating system, please let a staff member know.
 
-* [Sublime Text (available for Windows/Mac/Linux)](./Text_editor.md)
+* [Sublime Text (available for Windows/Mac/Linux)](./standalone-tutorials/Text_editor.md)
 
 ## Goal #3: Practice starting and exiting Python
 
 We'll do a lot of learning and practicing at a Python prompt (this is "interactive" because you are typing the code and hitting enter to run it yourself, instead of running it from a file).  
 So let's practice starting and exiting Python:
 
-* [Windows](./Windows_interactive_Python.md)
-* [Mac / Linux](./Mac_Linux_interactive_Python.md)
+* [Windows](./standalone-tutorials/Windows_interactive_Python.md)
+* [Mac / Linux](./standalone-tutorials/Mac_Linux_interactive_Python.md)
 
 ## Goal #4: Practice navigating the computer from a command prompt
 
@@ -34,8 +34,8 @@ We will be running files containing Python code (Python "scripts") from the comm
 You'll need to be able to navigate to those scripts using the command prompt so you can run them.  
 In this section, we'll practice using these navigation commands.
 
-* [Windows](./Windows_terminal_navigation.md)
-* [Mac / Linux](./Mac_linx_terminal_navigation.md)
+* [Windows](./standalone-tutorials/Windows_terminal_navigation.md)
+* [Mac / Linux](./standalone-tutorials/Mac_linx_terminal_navigation.md)
 
 ## Goal #5: Practice running Python code from a file
 
@@ -80,14 +80,14 @@ It's time to start learning, reading, and writing some Python!
 We'll start you off with working through a mostly self-directed tutorial (feel free to ask questinos though!).  
 Later, we'll have an interactive lecture to cover more Python basics.
 
-[Self-directed Tutorial](./Self_Directed_Tutorial.md)
+[Self-directed Tutorial](./standalone-tutorials/Self_Directed_Tutorial.md)
 
 ## Goal #7: Practice Python using CodingBat
 
 Learning about functions opened up a whole new way for us to practice, using the programming site codingbat.com.  
 The big goal of this practice section is to get you thinking about how to solve problems in Python.
 
-[Self-directed Tutorial](./CodingBat_Using_Codingbat.md)
+[Self-directed Tutorial](./standalone-tutorials/CodingBat_Using_Codingbat.md)
 
 You don't have to create a CodingBat account to do the exercises, but if you do create an account it'll keep track of which problems you've completed and other statistics.
 
