@@ -74,20 +74,7 @@ You created and ran your first Python script!
 * When you run the python command by itself, you start a Python prompt. You can execute Python code interactively at that prompt.
 * When you run the python command with a file name as an argument, Python executes the Python code in that file.
 
-
-## Goal #6: Explain about dependencies and getting them installed
-
-A good Programmer is a Lazy programmer. We are going to use a lot of code that other people wrote to make our life easier.  
-
-Here we are going to explain about the wonderful and confusing world of dependencies/vendor code/3rd party libraries and what is the Pythonic way of using them.  
-
-We'll also talk about the horrible problem of versioning and how that makes life hard and what can we do to mitigate that
-
-* [Windows](./Windows_project_dependencies.md)
-* [Mac](./OSX_project_dependencies.md)
-* [Linux](./Linux_project_dependencies.md)
-
-## Goal #7: Start learning Python!
+## Goal #6: Start learning Python!
 
 It's time to start learning, reading, and writing some Python!  
 We'll start you off with working through a mostly self-directed tutorial (feel free to ask questinos though!).  
@@ -95,7 +82,7 @@ Later, we'll have an interactive lecture to cover more Python basics.
 
 [Self-directed Tutorial](./Self_Directed_Tutorial.md)
 
-## Goal #8: Start learning Python!
+## Goal #7: Practice Python using CodingBat
 
 Learning about functions opened up a whole new way for us to practice, using the programming site codingbat.com.  
 The big goal of this practice section is to get you thinking about how to solve problems in Python.
@@ -103,3 +90,22 @@ The big goal of this practice section is to get you thinking about how to solve 
 [Self-directed Tutorial](./CodingBat_Using_Codingbat.md)
 
 You don't have to create a CodingBat account to do the exercises, but if you do create an account it'll keep track of which problems you've completed and other statistics.
+
+
+## Goal #8: Explain about dependencies and getting them installed
+
+A good Programmer is a Lazy programmer. We are going to use a lot of code that other people wrote to make our life easier.  
+
+Here we are going to explain about the wonderful and confusing world of dependencies/vendor code/3rd party libraries and what is the Pythonic way of using them.   We'll also talk about the horrible problem of versioning and how that makes life hard and what can we do to mitigate that. We'll be discussing something similar to [this blog post](http://www.simononsoftware.com/virtualenv-tutorial-part-2/) with different levels of details.
+
+* [Install `pip`](https://pip.pypa.io/en/stable/installing/)
+* [Use `pip` to install `virtualenv`](https://virtualenv.pypa.io/en/stable/installation/)
+* `pip freeze` to list globally installed packages.
+* Create a project directory using `mkdir` in your user directory `/home/<user>/TjejerKodar` / `/Users/<user>/TjejerKodar` / `/C:\Users\<user>\TjejerKodar`
+* `cd` to the project dir.
+* [Create a `virtualenv` for this project](https://virtualenv.pypa.io/en/stable/userguide/)
+* Activate it (see userguide)
+* `pip install requests`
+* `pip freeze` to see packages install in the virtual env for the project
+* `deactivate` the virtual env
+* `pip freeze` again for comparison
