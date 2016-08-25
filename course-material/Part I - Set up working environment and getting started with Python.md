@@ -82,12 +82,13 @@ Later, we'll have an interactive lecture to cover more Python basics.
 
 [Self-directed Tutorial](./standalone-tutorials/Self_Directed_Tutorial.md)
 
-## Goal #7: Practice Python using CodingBat
+## Homework / Bonus material: Practice Python using CodingBat
 
-Learning about functions opened up a whole new way for us to practice, using the programming site codingbat.com.  
-The big goal of this practice section is to get you thinking about how to solve problems in Python.
+Learning about functions opened up a whole new way for us to practice, using the programming site `codingbat.com`.  
 
-[Self-directed Tutorial](./standalone-tutorials/CodingBat_Using_Codingbat.md)
+The big goal of this practice section is to get you thinking about how to solve problems in Python.  
+
+[Self-directed Tutorial](http://wiki.openhatch.org/Boston_Python_Workshop_6/Friday/CodingBat_Using_Codingbat)
 
 You don't have to create a CodingBat account to do the exercises, but if you do create an account it'll keep track of which problems you've completed and other statistics.
 
