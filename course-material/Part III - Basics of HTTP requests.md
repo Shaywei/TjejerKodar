@@ -73,3 +73,26 @@ This will delete all data associated with the resource, identified by `/clients/
 In addition, `POST` requests should cause processing of the request body as a subordinate of the URL you are posting to.
 
 Often, `POST` requests are used to trigger operations on the server, which do not fit into the Create/Update/Delete paradigm;
+
+## URL Parameters ([Query String](https://en.wikipedia.org/wiki/Query_string))
+
+A typical URL containing a query string is as follows:
+
+`http://example.com/over/there?name=ferret`
+
+* The query string is composed of a series of field-value pairs.
+* Within each pair, the field name and value are separated by an equals sign, `=`.
+* The series of pairs is separated by the ampersand, `&`.
+
+#### URL Encoding
+
+Some characters cannot be part of a `URL` (for example, the SPACE) and some other characters have a special meaning in a URL: for example, the characters `?`, `&` and `=`
+
+The URI generic syntax uses URL encoding to deal with this problem, while `HTML` forms make some additional substitutions rather than applying percent encoding for all such characters.
+
+For example, SPACE is encoded as `+` or `%20`.
+
+You can see more examples [here](https://en.wikipedia.org/wiki/Percent-encoding).
+
+
+
