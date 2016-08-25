@@ -35,8 +35,7 @@ You'll need to be able to navigate to those scripts using the command prompt so 
 In this section, we'll practice using these navigation commands.
 
 * [Windows](./Windows_terminal_navigation.md)
-* [Mac](./OSX_terminal_navigation.md)
-* [Linux](./Linux_terminal_navigation.md)
+* [Mac / Linux](./Mac_linx_terminal_navigation.md)
 
 ## Goal #5: Practice running Python code from a file
 
