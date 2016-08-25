@@ -26,7 +26,7 @@ We'll do a lot of learning and practicing at a Python prompt (this is "interacti
 So let's practice starting and exiting Python:
 
 * [Windows](./Windows_interactive_Python.md)
-* [Mac / Linux](./Mac_Linux_interactive_Python.md.md)
+* [Mac / Linux](./Mac_Linux_interactive_Python.md)
 
 ## Goal #4: Practice navigating the computer from a command prompt
 
