@@ -1,6 +1,8 @@
-# Interactive Python - Mac
+# Interactive Python - Mac/Linux
 
-1. Start up a `Terminal` command prompt. You can find the `Terminal` application through Spotlight, or navigate to `Applications/Utilities/Terminal`.
+1. Start up a termianal command prompt.
+  * Mac: You can find the `Terminal` application through Spotlight, or navigate to `Applications/Utilities/Terminal`
+  * Linux: `Ctrl+Alt+T` or through the "start" navigation menu.
 2. To start Python, type  
 `python`  
 at the command prompt and hit enter. You should see something like  
@@ -14,7 +16,7 @@ The `>>>` indicates that you are at a Python prompt.
 
 3.Exit the Python prompt by typing  
 `exit()`  
-andand hitting enter. Now you're back at the OS X command prompt (which looks something like `<yourname>$`).
+andand hitting enter. Now you're back at the command prompt.
 
 ### Success!
 Practice these steps until you feel comfortable navigating to a command prompt, starting Python, and exiting Python.
