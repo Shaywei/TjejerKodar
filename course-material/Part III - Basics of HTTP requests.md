@@ -159,11 +159,33 @@ shayweiss@ ~/git/ $ curl www.example.com
 
 * Super short [curl tutorial](https://gist.github.com/joyrexus/85bf6b02979d8a7b0308)
 
-### Let's play with making simple API calls
+### Excercise: Let's play with making simple API calls
 
-#### Deploy an example local server
+#### Deploy a silly local server
 
-1. Download this [silly server](./scripts/???.py)
+1. Download this [silly server](./scripts/silly_server.py)
 2. Make sure you have all the dependency to run it in an activated `virtualenv`
-3. Open a command-prompt  and run it.
+3. Open a command-prompt  and run it `python silly_server.py` (You need to `cd` to the directory first)
 
+#### "Documentation" for the `silly server` API
+
+The server is holding a list of silly things.  
+When you deploy the server (step 3 above) it will run in [`localhost`](https://en.wikipedia.org/wiki/Localhost) on port `8080`.  
+
+Here is how you interact with it:
+
+1. You can list all the silly things with a `GET` request to `/silly` endpoint. Open a browser and put `http://localhost:8080/silly` in the address bar or alternatively run `curl http://localhost:8080/silly` from the command prompt
+2. You can add things to the list. The server offers two different ways to do this (try them both!):
+  * You can do a `PUT` request to `/silly/<new_item>`  
+  **Bonus:** To experience URL encoding, try to add an item with a space in the name this way)
+  * You can do a `POST` request to `/silly/add` - you'll need to send a request body with a `json` (dictionary). The json should have a key called `new_item` and the value for that key is the new item you wish to add.  
+  **Q:** What happens if what you send is not a dictionary or a dictionary without the `new_item` key?
+
+  After adding new items, list all the items again to verify that the items have been added.
+3. You can delete things from the list. The server offers two different ways to do this (try them both!):
+  * You can do a `DELETE` request to `/silly/<item_to_delete>`
+  * You can delete with a `POST` request to `/silly/delete`. But this time, instead of a request body, the server expect a *URL parameter*. There are two different type of items you can supply:  
+    * `item_name` and the name of the item.
+    * `item_index` and the number of the item in the list
+
+  **Q:** What happens if you give a wrong name, an index that doesn't exist, or doesn't supply a parameter?
