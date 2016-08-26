@@ -94,5 +94,76 @@ For example, SPACE is encoded as `+` or `%20`.
 
 You can see more examples [here](https://en.wikipedia.org/wiki/Percent-encoding).
 
+## `HTTP` client - `cURL`
 
+`cURL` (or just `curl` if you're lazy) is a nifty, easy-to-use tool for making `HTTP` requests from the command prompt 
+If you're using Mac / Linux - you have it installed already :)
+If you're using Windows, you'll have to download `cURL`.
+You can download it [here](https://curl.haxx.se/download.html) (Scroll to the bottom of the list).
+
+* Verify that you can `curl www.example.com` and get a boring `html` doc:
+
+```
+shayweiss@ ~/git/ $ curl www.example.com
+<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 1em;
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        body {
+            background-color: #fff;
+        }
+        div {
+            width: auto;
+            margin: 0 auto;
+            border-radius: 0;
+            padding: 1em;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is established to be used for illustrative examples in documents. You may use this
+    domain in examples without prior coordination or asking for permission.</p>
+    <p><a href="http://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+```
+
+* Super short [curl tutorial](https://gist.github.com/joyrexus/85bf6b02979d8a7b0308)
+
+### Let's play with making simple API calls
+
+#### Deploy an example local server
+
+1. Download this [silly server](./scripts/???.py)
+2. Make sure you have all the dependency to run it in an activated `virtualenv`
+3. Open a command-prompt  and run it.
 
