@@ -8,6 +8,7 @@ app = flask.Flask(__name__)
 
 silly_things = [
     "Sardine Ice-Cream", "The Patriarchy", "Pandas",
+    "Toes of the Pinky variety",
     "Violence", "The phrase: 'Goddag yxskaft'"]
 
 
