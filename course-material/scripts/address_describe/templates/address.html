@@ -1,0 +1,65 @@
+
+<html><head>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+<script src="/static/imagesloaded.pkgd.min.js"></script>
+<style>
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+.grid { width: 1550px; }
+.grid-item, .grid-sizer { width: 310px; height: 310px; }
+.float-center {
+    z-index: 100;
+    position: absolute;
+    left: 400;
+    top: 300;
+    background: rgba(0,0,0,0.8);
+    font-size: 30px;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.float-center a{
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Map</h2>
+<img src="{{ static_map }}" alt="Static Map" style="width:600;height:300px;">
+
+<h2>Street View</h2>
+<img src="{{ street_view }}" alt="Street View" style="width:600;height:300px;">
+
+<div class="float-center">
+Greetings from {{ address }}, located at {{ lati }}, {{ longi }}!
+</p><p>
+The weather here is: {{ weather }}.
+</div>
+
+<div class="grid grid js-masonry">
+{% for photo in photos['data'] %}
+ <div class="grid-item"><img src="{{ photo['images']['low_resolution']['url']}}"></div>
+{% endfor %}
+</div>
+
+<script>
+var $grid = $('.grid').imagesLoaded(function() {
+    $grid.masonry({
+          // set itemSelector so .grid-sizer is not used in layout
+          itemSelector: '.grid-item',
+          // use element for option
+          columnWidth: '.grid-sizer',
+          percentPosition: true
+        });
+});
+</script>
+</body>
+</html>
