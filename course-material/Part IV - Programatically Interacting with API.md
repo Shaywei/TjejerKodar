@@ -24,6 +24,44 @@ Don't worry - we'll switch "driver" every few minutes :)
 
 ### Mini Project / Excersice
 
-It's time to jump in to the water and learn how to swim (or suffer a terrible death by drowning)!  
+It's time to jump in to the water and learn how to swim (or suffer a terrible death by drowning)!
+
+Let's create a service that you can query for an address and it will give you:
+
+* The current [forecast](https://developer.forecast.io/docs/v2) for that location in the address
+* A bunch of public [Instagram](https://www.instagram.com/developer/endpoints/media/) photos for the address
+* A [static google map](https://developers.google.com/maps/documentation/static-maps/intro) of the address
+* A [google maps streetview](https://developers.google.com/maps/documentation/streetview/intro) picture of the address
+
+Since we are not doing a webdevelopment course, I will supply the code and a general explanation of the server part.  
+But the hard part (which is up to you) is to add the functionality for interaction with the different APIs and manipulating the data to fit into the provided template.
+
+#### Before we start
+
+##### Authorization is a headache
+
+In this part we'll:
+
+* Intoduce the concept of authorization, access tokens and API keys
+* Give examples of how to generate keys/tokens for the services we want to interact with:
+  * [Forecast.io](https://developer.forecast.io/docs/v2
+  * [Googlemaps - static](https://developers.google.com/maps/documentation/static-maps/intro)
+  * [Googlemaps - streetview](https://developers.google.com/maps/documentation/streetview/intro)
+  * [Instagram](https://www.instagram.com/developer/endpoints/media/) - Is a real pain. After much headache though, I found [this](http://services.chrisriversdesign.com/instagram-token) which made life easy again.
 
 
+##### Human readable address to `lat` `lon` pair
+
+We want the users for the service to be able to just put in a simple address (for example: Barcelona, Spain).  
+However, all the APIs above use `{lat,lon}` pairs...  
+Personally, I have no idea how to translate one to other!  
+Fortunately though.... [I don't have to!](http://lmgtfy.com/?q=python+address+to+lat+lon#)
+
+##### Rundown for the server code
+
+Let's go through the files / code we have to start with in the address_describe project folder in scripts.
+
+* [The server](./scripts/address_describe/simple_flask_server.py)
+* [The template](./scripts/address_describe/templates/address.html)
+
+##### Get to work! ^_^
