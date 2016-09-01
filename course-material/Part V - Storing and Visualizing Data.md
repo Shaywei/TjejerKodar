@@ -27,7 +27,7 @@ Now that we know how to get data from APIs, let's see if we can learn something 
 
 ## Lets store and visualize some data!
 
-* Walk through the [Tweeter Dump script](../scripts/twitter-es-dump/tweeter_es_dump.py)
+* Walk through the [Twitter Dump script](../scripts/twitter-es-dump/twitter_es_dump.py)
 
 ?Maybe work with the Slack API and put each message that was sent to slack into ES with some fields. Then visualize how many messages each user had / how many words each user had etc'?
 ?Maybe something with FB API?

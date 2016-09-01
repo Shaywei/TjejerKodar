@@ -1,20 +1,19 @@
 import time
+import argparse
+
 
 import tweepy
 import elasticsearch
 
-# Twitter API credentials
-consumer_key = "" # NOQA
-consumer_secret = "" # NOQA
+# NOQA Load the secrets from file so some scrublord like me doesn't accidentally commit them to git.
 
-access_token = "" # NOQA
-access_token_secret = "" # NOQA
+SEND_TO_ES = False
 
-# ES URL and credential
-es_url = ""  # NOQA Must start with http[s]
-es_user = ""
-es_pass = ""
-
+secrets = argparse.Namespace()
+with open("SECRETS.txt") as f:
+    for line in f:
+        vals = line.strip().split('=', 1)
+        setattr(secrets, vals[0].lower(), vals[1])
 
 '''
 Make sure you PUT the following to init the index 'tweeter_dump'
@@ -40,22 +39,27 @@ PUT /tweeter_dump/
 }
 '''
 
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
+auth = tweepy.OAuthHandler(
+    secrets.twitter_consumer_key, secrets.twitter_consumer_secret)
+auth.set_access_token(
+    secrets.twitter_access_token, secrets.twitter_access_token_secret)
 
 
-es = elasticsearch.Elasticsearch([
-    "{}//{}:{}@{}".format(
-        es_url.split('//', 1)[0],
-        es_user,
-        es_pass,
-        es_url.split('//', 1)[1])])
+if SEND_TO_ES:
+    es = elasticsearch.Elasticsearch([
+        "{}//{}:{}@{}".format(
+            secrets.es_url.split('//', 1)[0],
+            secrets.es_user,
+            secrets.es_pass,
+            secrets.es_url.split('//', 1)[1])])
+    print 'sending tweets to ', secrets.es_url
 
 
 class StreamListener(tweepy.StreamListener):
     # override tweepy.StreamListener to add logic to on_status
 
     def on_status(self, status):
+        print "new status!"
         status = status._json
 
         doc = {
@@ -66,12 +70,14 @@ class StreamListener(tweepy.StreamListener):
             'word_count': len(status['text'].split())
         }
         print doc
-        es.create(
-            index='tweeter_dump',
-            doc_type='tweet',
-            body=doc)
 
-        print "successfully put to ES!"
+        if SEND_TO_ES:
+            es.create(
+                index='tweeter_dump',
+                doc_type='tweet',
+                body=doc)
+
+            print "successfully put to ES!"
 
     def on_error(self, status_code):
         if status_code == 420:
@@ -82,7 +88,9 @@ streamer = tweepy.Stream(
     auth=auth, listener=StreamListener())
 
 # Fill with your own Keywords bellow
-track_terms = ['sweden', 'feminism']
+track_terms = ['sex', 'sweden', 'Israel', 'feminism', 'cthulhu']
+
+print "Tracking tweets with terms {}".format(track_terms)
 
 streamer.filter(track=track_terms)
 # streamer.userstream(None)
