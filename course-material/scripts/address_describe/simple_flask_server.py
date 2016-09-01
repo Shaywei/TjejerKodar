@@ -76,12 +76,7 @@ def get_static_map(lati, longi):
     The latter is to avoid browser caching.
     '''
 
-    url = 'https://maps.googleapis.com/maps/api/staticmap?' \
-        'center={},{}&key={}&size=600x300&zoom=13'
-    url = url.format(lati, longi, GOOGLE_MAPS_STATIC_API_KEY)
-    r = requests.get(url)
-    _save_static_file('map.jpg', r.content)
-    return '/static/map.jpg?{}'.format(time.time())
+    raise NotImplementedError()
 
 
 def get_streetview(lati, longi):
@@ -94,12 +89,7 @@ def get_streetview(lati, longi):
     The latter is to avoid browser caching.
     '''
 
-    url = 'https://maps.googleapis.com/maps/api/streetview?' \
-        'size=600x300&location={},{}&key={}'
-    url = url.format(lati, longi, GOOGLE_MAPS_STREETVIEW_API_KEY)
-    r = requests.get(url)
-    _save_static_file('street.jpg', r.content)
-    return '/static/street.jpg?{}'.format(time.time())
+    raise NotImplementedError()
 
 
 @app.route('/')
@@ -114,7 +104,7 @@ def describe_address(address):
     # This is just text describing the weather
     weather = _get_weather(lati, longi)
 
-    # This is a list of urls where each is a photo)
+    # This is a list jsons which has a )
     photos_urls = get_photos(lati, longi)
 
     # These are filenames for a jpg file containing the image
