@@ -29,7 +29,7 @@ You don't have to create a CodingBat account to do the exercises, but if you do 
 * [The `random` module](https://docs.python.org/2/library/random.html)
   * `random.randint`
   * `random.choice`
-* Summary: [`state_capitals.py`](./scripts/state_capitals.py)
+* Summary: [`state_capitals.py`](../scripts/state_capitals.py)
 
 
 ## Goal #4: Explain about dependencies and getting them installed

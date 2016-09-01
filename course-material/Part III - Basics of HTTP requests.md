@@ -163,7 +163,7 @@ shayweiss@ ~/git/ $ curl www.example.com
 
 #### Deploy a silly local server
 
-1. Download this [silly server](./scripts/silly_server.py)
+1. Download this [silly server](../scripts/silly_server.py)
 2. Make sure you have all the dependency to run it in an activated `virtualenv`
 3. Open a command-prompt  and run it `python silly_server.py` (You need to `cd` to the directory first)
 

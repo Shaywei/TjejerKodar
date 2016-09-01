@@ -61,7 +61,7 @@ Fortunately though.... [I don't have to!](http://lmgtfy.com/?q=python+address+to
 
 Let's go through the files / code we have to start with in the address_describe project folder in scripts.
 
-* [The server](./scripts/address_describe/simple_flask_server.py)
-* [The template](./scripts/address_describe/templates/address.html)
+* [The server](../scripts/address_describe/simple_flask_server.py)
+* [The template](../scripts/address_describe/templates/address.html)
 
 ##### Get to work! ^_^
