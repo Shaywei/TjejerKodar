@@ -10,6 +10,11 @@ WEATHER_API_KEY = ''
 GOOGLE_MAPS_STATIC_API_KEY = ''
 GOOGLE_MAPS_STREETVIEW_API_KEY = ''
 
+# Better way (yet still kinda bad) to load secrets
+# secrets = dict()
+# with open("SECRETS.json") as f:
+#     secrets = json.loads(f.read())
+
 # 'static_folder' is used for serving static files
 proj_dir = os.path.abspath(os.path.dirname(__file__))
 static_folder = os.path.join(proj_dir, 'static')
