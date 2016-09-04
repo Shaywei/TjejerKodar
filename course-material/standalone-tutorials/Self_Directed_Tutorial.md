@@ -289,11 +289,19 @@ We can use double quotes to avoid this problem:
 
 ```
 print "I'm a happy camper"
-or we can escape the quote with a backslash:
+```
+
+or we can escape the quote with a backslash:  
+
+```
 print 'I\'m a happy camper'
 print 'Ada Lovelace is often called the world\'s first programmer.'
 print "Computer scientist Grace Hopper popularized the term \"debugging\"."
-One fun thing about strings in Python is that you can multiply them:
+```
+
+One fun thing about strings in Python is that you can multiply them:  
+
+```
 print "A" * 40
 print "ABC" * 12
 h = "Happy"
