@@ -375,9 +375,10 @@ Read through the file in your text editor carefully and check your understanding
 
 
 Study the script until you can answer these questions:  
-1. How do you comment code in Python?
-2. How do you print just a newline?
-3. How do you print a multi-line string so that whitespace is preserved?
+
+1. How do you comment code in Python?  
+2. How do you print just a newline?  
+3. How do you print a multi-line string so that whitespace is preserved?  
 
 Let's get back to some interactive examples. Keep typing them out! You'll thank yourself later. :)
 
