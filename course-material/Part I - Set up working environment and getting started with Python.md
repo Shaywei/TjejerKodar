@@ -65,7 +65,7 @@ Doing this will cause Python to execute the contents of that script -- it should
 What you've done here is run the Python application with an argument -- the name of a file, in this case `hello.py`.  
 Python knows that when you give it a file name as an argument, it should execute the contents of the provided file.  
 You get the same result as if you typed  
-`print "Hello World!"  
+`print "Hello World!"`  
 at a Python prompt and hit enter.
 
 ### Success
