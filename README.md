@@ -1,4 +1,4 @@
-# Welcome to (TjejerKodar's "Hackathon", Fall 2016)[http://www.tjejerkodar.se/course/hackathon]
+# [Welcome to TjejerKodar's "Hackathon", Fall 2016](http://www.tjejerkodar.se/course/hackathon)
 
 ## whoami
 
