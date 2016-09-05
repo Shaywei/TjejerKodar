@@ -359,7 +359,7 @@ Take a break, stretch, meet some neighbors, and ask the staff if you have any qu
 
 Until now we've been executing commands at the Python prompt. This is great for math, short bits of code, and testing. For longer ideas, it's easier to store the code in a file.  
 
-Download [this file](https://github.com/Shaywei/TjejerKodar/blob/master/scripts/nobel.py) by right-clicking on it and saying to save it as a ".py" file to your Desktop. The ".py" extension hints that this is a Python script.  
+Download [this file](https://raw.githubusercontent.com/Shaywei/TjejerKodar/master/scripts/nobel.py) by right-clicking on it and saying to save it as a ".py" file to your Desktop. The ".py" extension hints that this is a Python script.  
 
 Open a command prompt, and use the navigation commands (dir and cd on Windows, ls, pwd, and cd on OS X and Linux) to navigate to your home directory. See navigating from a command prompt for a refresher on those commands.  
 
