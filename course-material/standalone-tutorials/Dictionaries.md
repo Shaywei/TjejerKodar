@@ -35,9 +35,9 @@ A given key can only have one value, but multiple keys can have the same value.
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'Eve'
->>> "Eve" in her_dict
+>>> "Eve" in your_dict
 False
->>> "Alice" in her_dict
+>>> "Alice" in your_dict
 True
 >>> your_dict.get("Eve")
 >>> person = your_dict.get("Eve")
@@ -45,16 +45,18 @@ True
 None
 >>> print type(person)
 <type 'NoneType'>
->>> your_dict.get("Alice")
-'coconut'
 ```
 
 ### Changing elements of a dictionary
 
 ```
+>>> your_dict.get("Alice")
+'chocolate'
 >>> your_dict["Alice"] = "coconut"
 >>> your_dict
 {'Bob': 'strawberry', 'Cara': 'mint chip', 'Dora': 'vanilla', 'Alice': 'coconut'}
+>>> your_dict.get("Alice")
+'coconut'
 ```
 
 ### Types
