@@ -44,7 +44,7 @@ In this part we'll:
 
 * Intoduce the concept of authorization, access tokens and API keys
 * Give examples of how to generate keys/tokens for the services we want to interact with:
-  * [Forecast.io](https://developer.forecast.io/docs/v2
+  * [Forecast.io](https://developer.forecast.io/docs/v2)
   * [Googlemaps - static](https://developers.google.com/maps/documentation/static-maps/intro)
   * [Googlemaps - streetview](https://developers.google.com/maps/documentation/streetview/intro)
   * [Instagram](https://www.instagram.com/developer/endpoints/media/) - Is a real pain. After much headache though, I found [this](http://services.chrisriversdesign.com/instagram-token) which made life easy again.
