@@ -1,0 +1,17 @@
+PUT /<index_name>/
+{
+  "mappings": {
+    "tweet": {
+      "properties": {
+        "@timestamp" : {
+            "format" : "epoch_millis",
+            "type" : "date"
+        },
+        "user" : { "type": "string" },
+        "text" : { "type": "string" },
+        "word_count": { "type": "integer" },
+        "other_field": { "type": <some_type> }
+      }
+    }
+  }
+}
