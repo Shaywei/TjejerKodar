@@ -1,4 +1,4 @@
-# Part IV - Storking and Visualzing Data
+# Part IV - Storing and Visualzing Data
 
 Now that we know how to get data from APIs, let's see if we can learn something from it!
 
