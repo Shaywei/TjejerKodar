@@ -23,6 +23,7 @@ Now that we know how to get data from APIs, let's see if we can learn something 
 * [Mapping](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html)
   * Show example with @timestamp and explain the importance of that for visualizing!
   * Explain about [Unix timestamp (Epoch)](https://en.wikipedia.org/wiki/Unix_time), a useful [converter](http://www.epochconverter.com/)
+  * [Example PUT request to create new mapping](../scripts/example_ES_mapping_PUT.json)
 * [Queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html)
 
 ## Lets store and visualize some data!
