@@ -62,6 +62,12 @@ Fortunately though.... [I don't have to!](http://lmgtfy.com/?q=python+address+to
 Let's go through the files / code we have to start with in the address_describe project folder in scripts.
 
 * [The server](../scripts/address_describe/simple_flask_server.py)
-* [The template](../scripts/address_describe/templates/address.html)
+* [The template](../scripts/address_describe/templates/address.html) (Not in the scope of the course)
+
+##### Some possible hints for when you're stuck
+
+* Are you running the server?  (Check in terminal)
+* Are you running the server from the same code that you are editing?  (Maybe add a print statement and see if you actually see it when you run the server)
+* Environment issues? (Are you getting `ImportError`s? Are you running within a `virtualenv`? What sort of modules do you have installed there?)
 
 ##### Get to work! ^_^
